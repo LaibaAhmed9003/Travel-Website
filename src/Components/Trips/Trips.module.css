@@ -1,0 +1,78 @@
+.trips_wrapper{
+  
+  margin: 0 !important; /* Remove top margin */
+  padding: 80px 13%;/* Same as Memories section */
+  padding-bottom: 40px; 
+
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 30px;
+  justify-content: center; /* Center the entire grid content */
+  padding: 0 13%; 
+ 
+}
+.cards .card{
+  width: 100%;
+  height: 450px;
+  box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  margin: auto;
+  border: 0.8px solid rgba(131,131,131,0.5);
+}
+.cards .card img{
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  display: block;
+}
+.cards .card .TripContent{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: space-between;
+  height: auto;
+  padding: 28px;
+  align-items: center; 
+
+}
+.Pricing , .TripDetails{
+  display: flex;
+  font-size: 14px;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 1%;
+}
+.rating i{
+  color: rgba(231, 76, 60);
+}
+.Pricing .price{
+  font-size: 19px;
+  font-weight: 600;
+  color: rgba(231, 76, 60);
+  white-space: nowrap;
+}
+@media screen and (max-width:1360px) {
+  .cards{grid-template-columns: repeat(3,1fr);} 
+  }
+  
+  @media screen and (max-width:840px) {
+    .cards{grid-template-columns: repeat(3,1fr);} 
+    .cards .card img{ 
+      height: 250px;
+    }
+    .cards .card{
+      height: 500px;
+    }
+   
+    @media screen and (max-width:770px) {
+      .cards{grid-template-columns: repeat(1,1fr);} 
+      .cards .card img{ 
+        height: 280px;
+      }
+      .cards .card{
+        height: 550px;
+      }
+      }  }    

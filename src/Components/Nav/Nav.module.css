@@ -1,0 +1,136 @@
+.Nav_wrapper {
+  width: 90%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4%;
+  border: 1px solid #130329;
+  border-radius: 13px;
+  position: fixed;
+  z-index: 999;
+  box-shadow: 0 0  30px rgba(30, 30, 30, 0.15);
+  top:50px;
+  left: 5%;
+  background-color: #fff;
+}
+.Nav_wrapper .logo a{
+  font-size: 28px;
+  color: #1e1e1e;
+  font-weight: 700;
+ }
+.Nav_wrapper ul li {
+  display: inline-block;
+  margin: 0 15px;
+  font-style: initial;
+}
+.Nav_wrapper ul li a{
+  font-size: 12px;
+  display: flex;
+  color: #1e1e1e;
+  transition: 0.5s;
+
+ }
+ .Nav_wrapper ul li a:hover{
+  color: rgb(231, 76, 60); 
+ }
+.nav_btns
+{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.Nav_wrapper .logo a span{
+  color: rgb(231, 76, 60);
+  font-size: 35px;
+}
+.nav_btns .search_wrapper{
+  width: 200px;
+  height: 30px;
+  display: flex;
+  position: relative;
+}
+.nav_btns .search_wrapper input{
+  width: 100%;
+  height: 112%;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  padding: 0 29px;
+  background-color: rgba(00,0,0,0.05);
+}
+.nav_btns .search_wrapper i{
+  position: absolute;
+  left: 8px;
+  top: 7px;
+  cursor: pointer;
+  }
+.nav_btns .CallBtn {
+  width: 200px;
+  display: flex;
+  gap: 25px;
+}
+.nav_btns .CallBtn i{
+  font-size: 17px;
+  color: rgb(231, 76, 60);
+}
+.nav_btns .CallBtn p{
+  font-size: 10px;
+  font-weight: 500px;
+}
+.nav_btns .CallBtn p small{
+ font-weight: 200;
+ font-size: 10px;
+ display: block;
+}
+#bars{
+  padding: 10px;
+  font-size: 13px;
+  color: #1e1e1e;
+  cursor: pointer;
+  background-color: rgb(231, 76, 60);
+  transition: 0.6s;
+  display: none;
+}
+#bars:hover{
+  background-color: #1e1e1e;
+  color: #fff;
+}
+@media screen and (max-width:1300px) {
+  #bars{
+    display: block;
+  }
+  .Nav_wrapper ul{
+    position: absolute;
+    top: 125%;
+    left: 0;
+    background-color: #fff;
+    transition: .6s;
+    border-color: #1e1e1e;
+    width: 0%;
+    border-style: solid;
+    border-radius: 12px;
+    border-width: 0px;
+    overflow: hidden;
+  }
+  .Nav_wrapper ul li{
+    display: block;
+    margin: 15px 0;
+    padding: 8px 0;
+    padding-left: 8% !important;
+}
+.Nav_wrapper .activeMenu{
+  border-width: 1px;
+  width: 100%;
+}
+}
+@media screen and (max-width:750px) {
+  .nav_btns .CallBtn{
+    display: none;
+  }
+}
+@media screen and (max-width:550px) {
+  .nav_btns .search_wrapper{
+    display: none;
+  }
+}
